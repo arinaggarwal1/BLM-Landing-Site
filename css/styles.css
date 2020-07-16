@@ -5,6 +5,9 @@
     color: white;
     box-sizing: border-box;
 }
+html{
+     
+}
 
 .main-nav{
     height: 70px;
@@ -50,15 +53,17 @@
     width: 100%;
     height: 80vw;
     background-image: url(../media/man.jpg);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center;
+    position: relative;
 }
 
 .wrapper{
     display: grid;
     grid-template-rows: 2fr 1fr 0.8fr;
     height: 100%;
+    background-color: rgba(0,0,0,0.7)
 }
 
 .wrapper-i{
@@ -102,20 +107,23 @@
         height: auto;
     }
 }
+.preview-wrapper{
+    background-image: linear-gradient(to  bottom, #58fb55, black);
+    padding: 20px;
+}
 
 .preview{
-    background-color: #d4f1ff;
     height: auto; 
     width: 100%;
     display: grid;
     grid-template-rows: 1fr 0.85fr;
     padding: 10px;
-    margin: 10p
+    background-color: black
 
 }
 
 .text{
-    background-color: #363636;
+    background-color: black;
     display: grid;
     grid-template-rows: 1fr;
     height: auto;
@@ -168,7 +176,7 @@
     
 }
 .image-wrapper{
-    background-image: url(../media/asset.png);
+    background-image: url(../media/phonenoback.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -184,22 +192,29 @@
 
    @media only screen and (min-width: 1000px){
        .preview{
-           display: block;
-           height: 800px;
+           display: grid;
+           padding: 0;
+           width: 800px;
            position: relative;
-           background-image: url(../media/asset2.png);
            background-repeat: no-repeat; 
-           background-position: center
+           background-position: center;
+    
+           left: 50%;
+           transform: translateX(-50%);
        }
        
        .text{
-           display: none;
+           display: block;
+           padding: 0;
            
        }
        
        .image{
-           display: none;
+           display: block;
+           height: auto;
+           padding: 30px;
        }
+      
        
       
     }
@@ -215,3 +230,89 @@
     position: relative;
     top: 30px
 }
+
+.icon-wrapper{
+    position: absolute;
+    height: 100px; 
+    width: 450px;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px;
+    padding: 10px; 
+    
+}
+
+.icon{
+    background-color: black;
+    border-radius: 10px; 
+    padding: 5px;
+}
+
+#google{
+    background-image: url(../media/google.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center; 
+}
+
+#apple{
+    background-image: url(../media/apple.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center; 
+}
+
+@media only screen and (max-width: 1300px){
+    .icon-wrapper{
+    position: absolute;
+    height: 200px; 
+    width: 225px;
+    top: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+        grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 10px; 
+    
+    }
+
+}
+
+@media only screen and (max-width: 620px){
+    .icon-wrapper{
+        position: absolute;
+        height: 150px; 
+        width: 175px;
+       
+    
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .icon-wrapper{
+        position: absolute;
+        height: 100px; 
+        width: 112px;
+       
+    
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .icon-wrapper{
+        position: absolute;
+        height: 60px; 
+        width: 75px;
+       
+    
+    }
+
+}
+
+
+
