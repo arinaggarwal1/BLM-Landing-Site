@@ -104,11 +104,13 @@
 }
 
 .preview{
-    background-color: #27422c;
+    background-color: #d4f1ff;
     height: auto; 
     width: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.85fr;
+    padding: 10px;
+    margin: 10p
 
 }
 
@@ -161,8 +163,55 @@
 }
 
 .image{
-    background-image: url(../media/Layer%202.png);
+    
+    padding: 20px;
+    
+}
+.image-wrapper{
+    background-image: url(../media/asset.png);
     background-repeat: no-repeat;
-    background-size: 65%;
-    background-position: center
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+}
+
+    @media only screen and (min-width: 550px){
+        .preview{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr; 
+        }
+    }
+
+   @media only screen and (min-width: 1000px){
+       .preview{
+           display: block;
+           height: 800px;
+           position: relative;
+           background-image: url(../media/asset2.png);
+           background-repeat: no-repeat; 
+           background-position: center
+       }
+       
+       .text{
+           display: none;
+           
+       }
+       
+       .image{
+           display: none;
+       }
+       
+      
+    }
+    
+.footer{
+    width: 100%; 
+    height: 60px; 
+    background-color: black;
+}
+
+.footer h6{
+    font-size: 15px; 
+    position: relative;
+    top: 30px
 }
