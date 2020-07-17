@@ -149,13 +149,24 @@ html{
     padding: left
 }
 
+.gradient{
+    height: 20px;
+    width: 100%;
+    background-color: firebrick;
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
+    box-sizing: content-box;
+    padding: 45px;
+}
+
 .preview{
     height: auto; 
     width: 100%;
     display: grid;
     grid-template-rows: 1fr 0.85fr;
     padding: 10px;
-    background-color: black;
+    background-image: linear-gradient(to bottom, #58fb55, black);
 
 }
 
@@ -216,6 +227,7 @@ html{
     
     padding: 10px;
     
+
 }
 .image-wrapper{
     background-image: url(../media/asset3.png);
@@ -250,6 +262,11 @@ html{
            transform: translateX(-50%);
            box-sizing: content-box
        }
+       
+       .gradient{
+           height: 20px;
+            width: 800px;
+}
        
        .text{
            display: block;
