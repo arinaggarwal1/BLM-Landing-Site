@@ -152,12 +152,14 @@ html{
 .gradient{
     height: 20px;
     width: 100%;
-    background-color: firebrick;
+    background-image: linear-gradient(to bottom, #58fb55, black);
     position: relative;
     left: 50%; 
     transform: translateX(-50%);
     box-sizing: content-box;
     padding: 45px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .preview{
@@ -166,8 +168,7 @@ html{
     display: grid;
     grid-template-rows: 1fr 0.85fr;
     padding: 10px;
-    background-image: linear-gradient(to bottom, #58fb55, black);
-
+    background-color: black;
 }
 
 .text{
@@ -266,6 +267,7 @@ html{
        .gradient{
            height: 20px;
             width: 800px;
+           padding: 45px;
 }
        
        .text{
