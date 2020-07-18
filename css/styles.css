@@ -1,7 +1,7 @@
 *{
     margin: 0;
     text-align: center;
-font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
     color: white;
     box-sizing: border-box;
 }
@@ -84,13 +84,12 @@ html{
 
 .main3 h3{
     font-family: 'georgia';
-    
     font-weight: 300;
     position: relative;
     top: 30%;
     transform: translateY(-50%);
     font-size: 26px;
-    font-family: Trebuchet MS;
+    font-family: 'Playfair Display', serif;
     font-weight: 450;
 }
 
